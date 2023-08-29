@@ -1,0 +1,6 @@
+<!-- <h1>Projects</h1>
+<pre>
+{{projects | json}}
+</pre> -->
+
+<app-project-list [projects]="projects" (saveListItem)="onSaveListItem($event)"> </app-project-list>
