@@ -2,4 +2,22 @@
   Tell me and I forget, teach me and I may remember, involve me and I learn.
   </blockquote>
 
-  <app-projects-container> </app-projects-container>
+  <header class="sticky">
+    <a href="#" class="logo">
+    <img src=" ../assets/logo-3.svg" alt="logo" width="49" height="99">
+    </a>
+    <a [routerLink]="['./home']" class="button rounded"
+    routerLinkActive="active">
+    <span class="icon-home"> </span> Home
+    </a>
+    <a [routerLink]="['./projects']" class="button rounded"
+    routerLinkActive="active"> Projects
+    </a>
+    </header>
+    
+
+  <!-- <app-projects-container> </app-projects-container> -->
+  <div class="container"> 
+    <router-outlet> </router-outlet> 
+    </div>
+  

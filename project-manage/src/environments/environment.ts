@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  backendUrl: 'https://3000-glorayye-angularadvance-r0bf4hkuk4p.ws-us104.gitpod.io'
 };
 
 /*

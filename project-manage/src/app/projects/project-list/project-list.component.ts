@@ -9,10 +9,6 @@ export class ProjectListComponent implements OnInit {
 @Input() projects: Project[] = [];
 editingProject: Project;
 @Output() saveListItem = new EventEmitter<any>();
-onEdit(event: any) {
-  this.editingProject = event.editingProject;
-  console.log(this.editingProject);
- }
 
 
   constructor() { }
@@ -29,4 +25,9 @@ onEdit(event: any) {
     this.saveListItem.emit({ item: event.project }); 
    } 
  
+   onEdit(event: any) {
+    this.editingProject = event.editingProject;
+    console.log(this.editingProject);
+   }
+  
 }
